@@ -7,7 +7,7 @@ function printQuote() {
     var x = Math.floor(Math.random() * quotes.length);
     if (last != x)
     {
-        document.getElementById("quote").innerHTML += quotes[x].quote;
+        document.getElementById("quote").innerHTML = quotes[x].quote;
         document.getElementById("author").innerHTML = quotes[x].author;
         last = x;
         
@@ -17,12 +17,12 @@ function printQuote() {
         if (x >= quotes.length)
         {
             last = (x - 1);
-            document.getElementById("quote").innerHTML += quotes[last].quote;
+            document.getElementById("quote").innerHTML = quotes[last].quote;
             document.getElementById("author").innerHTML = quotes[last].author;
         }
         else {
             last = (x + 1);
-            document.getElementById("quote").innerHTML += quotes[last].quote;
+            document.getElementById("quote").innerHTML = quotes[last].quote;
             document.getElementById("author").innerHTML = quotes[last].author;
         }
         }
